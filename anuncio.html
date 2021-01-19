@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BienesRaices</title>
+    <!--Carga de Librerias para las fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <!-- Permite una visualizacion mas comun a los navegadores que indican propiedades al respecto, con el normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cabecera inicial tomado dentro de un header-->
+    <header class="site-header">
+        <!--Div contenedor de logotipo Bienes raices, links y texto encabezado principal-->
+        <div class="contenedor contenido-header">
+            <!--Div Superior Logo y barra navegacion-->
+           <div class="barra">
+                <!--Logotipo inicial ubicado en la parte alta-->
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <!--Barra de navegacion superior-->
+                <nav class="navegacion">
+                    <!--Navegacion Superior-->
+                    <!--Usamos los target para redirigir ya sea en una nueva pestaña o en la misma, _blank: abre nueva pagina, _self:misma pagina-->
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+           </div>
+        </div>
+    </header>
+
+    <!-- Parte central de la pagina de anuncio -->
+    <h1 class="fw-300 centrar-texto">Casa en Venta en la Playa</h1>
+    <img src="img/destacada.jpg" alt="Imagen Anuncio">
+    <main class="contenedor seccion contenido-centrado">
+        <div class="resumen-propiedad">
+            <p class="precio">$3,000,000</p>
+            <ul class="iconos-caracteristicas">
+                <li>
+                    <img src="img/icono_wc.svg" alt="icono wc">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img src="img/icono_estacionamiento.svg" alt="icono wc">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img src="img/icono_dormitorio.svg" alt="icono wc">
+                    <p>4</p>
+                </li>
+            </ul>
+        </div> <!-- .resumen-propiedad-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet vitae eros quis porta. Etiam felis sapien, semper in massa sit amet, aliquam ultricies nibh. Nam volutpat nec sem eget pharetra. Aenean iaculis cursus sem sed placerat. Vivamus mattis malesuada felis, eu vulputate mi commodo a. Etiam dolor massa, rhoncus a finibus ac, cursus non lacus. Sed faucibus bibendum nibh, vitae rutrum justo dapibus eget. Etiam dapibus odio bibendum dui venenatis, quis fringilla ante aliquet. Suspendisse vel nibh vel mauris interdum aliquam eget ut libero.</p>
+        
+        <p>Nullam faucibus purus non maximus volutpat. Vivamus non sem diam. Aenean sit amet ornare lectus. Nam ut ullamcorper urna. Sed sollicitudin condimentum urna, sed posuere est sagittis eget. Maecenas in magna blandit, fermentum arcu in, consequat lectus. Morbi sollicitudin porta felis, at suscipit purus maximus id. Etiam quis hendrerit enim, vitae euismod sem. Nunc lacinia suscipit felis, vel laoreet odio aliquet pulvinar. Mauris a nisl sollicitudin justo mattis feugiat ac eu nulla. Curabitur aliquam, tortor at sollicitudin rutrum, augue leo efficitur tortor, non tristique quam orci lobortis neque. Aliquam erat volutpat.</p>
+
+
+    </main>
+
+    <!--Elemento footer-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <!--Navegacion Parte inferior-->
+                <a  href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <!--Establecemos el uso de entidades en HTML-->
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy;</p>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>
