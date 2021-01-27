@@ -76,6 +76,7 @@ h4 {
         flex: 0 0 auto;
     }
 }
+/* Aplica un cursor cuando se coloca el mouse encima */
 .boton:hover {
     cursor: pointer;
 }
@@ -155,6 +156,29 @@ h4 {
 .navegacion a:hover{
     color: #71B100;
 }
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+/* Usando sin javascript enfocando al objetivo que es un id */
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+
+
 
 /**Iconos Nosotros**/
 @media (min-width: 768px) {
@@ -365,10 +389,12 @@ h4 {
 /* Enfocada en las paginas internas del proyecto */
 /* Usamos un nuevo estandar usamos display grid */
 /** Nosotros **/
-.contenido-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem; /*Puede estar deprecated, por revisar es usado para agregar separacion, ahora se usa column-gap: 2rem; que significa lo mismo*/
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem; /*Puede estar deprecated, por revisar es usado para agregar separacion, ahora se usa column-gap: 2rem; que significa lo mismo*/
+    } 
 }
 .texto-nosotros blockquote{
     font-weight: 900;
